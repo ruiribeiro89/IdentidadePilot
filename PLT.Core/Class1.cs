@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PLT.Core
+﻿namespace PLT.Core
 {
     public class Class1
     {

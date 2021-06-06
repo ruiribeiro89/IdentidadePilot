@@ -1,5 +1,3 @@
-using System;
-
 namespace PLT.WebApp.MVC.Models
 {
     public class ErrorViewModel

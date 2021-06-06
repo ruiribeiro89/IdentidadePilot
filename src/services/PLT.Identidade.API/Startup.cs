@@ -21,13 +21,13 @@ namespace PLT.Identidade.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(optionsAction:opt => 
-                opt.UseSqlServer(Configuration.GetConnectionString("ConnectionDB")));
+            services.AddDbContext<ApplicationDbContext>(optionsAction: opt =>
+                 opt.UseSqlServer(Configuration.GetConnectionString("ConnectionDB")));
 
             services.AddDefaultIdentity<IdentityUser>()
               .AddRoles<IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>()
-              .AddDefaultTokenProviders();  
+              .AddDefaultTokenProviders();
             services.AddMvc();
 
             services.AddControllers();
